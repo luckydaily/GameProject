@@ -210,7 +210,10 @@ PlayerSettings:
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
   metalAPIValidation: 1
+<<<<<<< .merge_file_a10064
   iOSRenderExtraFrameOnPause: 1
+=======
+>>>>>>> .merge_file_a07768
   appleDeveloperTeamID: 
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 

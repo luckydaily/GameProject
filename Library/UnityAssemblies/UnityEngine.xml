@@ -67,6 +67,7 @@
       <summary>
         <para>Include UV1 on the mesh vertices.</para>
       </summary>
+<<<<<<< .merge_file_a14588
     </member>
     <member name="F:UnityEngine.AdditionalCanvasShaderChannels.TexCoord2">
       <summary>
@@ -77,6 +78,18 @@
       <summary>
         <para>Include UV3 on the mesh vertices.</para>
       </summary>
+=======
+    </member>
+    <member name="F:UnityEngine.AdditionalCanvasShaderChannels.TexCoord2">
+      <summary>
+        <para>Include UV2 on the mesh vertices.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.AdditionalCanvasShaderChannels.TexCoord3">
+      <summary>
+        <para>Include UV3 on the mesh vertices.</para>
+      </summary>
+>>>>>>> .merge_file_a12240
     </member>
     <member name="T:UnityEngine.AI.NavMesh">
       <summary>
@@ -905,6 +918,7 @@ The newly built NavMeshData, or null if the NavMeshData was empty or an error oc
         <para>Contains and represents NavMesh data.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="P:UnityEngine.AI.NavMeshData.position">
       <summary>
         <para>Gets or sets the world space position of the NavMesh data.</para>
@@ -915,6 +929,8 @@ The newly built NavMeshData, or null if the NavMeshData was empty or an error oc
         <para>Gets or sets the orientation of the NavMesh data.</para>
       </summary>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="P:UnityEngine.AI.NavMeshData.sourceBounds">
       <summary>
         <para>Returns the bounding volume of the input geometry used to build this NavMesh (Read Only).</para>
@@ -12190,11 +12206,14 @@ Sometimes it is not possible to project (for example when the joints form a cycl
         <para>A set of parameters for filtering contact results.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="P:UnityEngine.ContactFilter2D.isFiltering">
       <summary>
         <para>Given the current state of the contact filter, determine whether it would filter anything.</para>
       </summary>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="F:UnityEngine.ContactFilter2D.layerMask">
       <summary>
         <para>Sets the contact filter to filter the results that only include Collider2D on the layers defined by the layer mask.</para>
@@ -12235,6 +12254,7 @@ Sometimes it is not possible to project (for example when the joints form a cycl
         <para>Sets the contact filter to filter the results by the collision's normal angle using minNormalAngle and maxNormalAngle.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="F:UnityEngine.ContactFilter2D.useOutsideDepth">
       <summary>
         <para>Sets the contact filter to filter within the minDepth and maxDepth range, or outside that range.</para>
@@ -12245,6 +12265,8 @@ Sometimes it is not possible to project (for example when the joints form a cycl
         <para>Sets the contact filter to filter within the minNormalAngle and maxNormalAngle range, or outside that range.</para>
       </summary>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="F:UnityEngine.ContactFilter2D.useTriggers">
       <summary>
         <para>Sets to filter contact results based on trigger collider involvement.</para>
@@ -12252,12 +12274,20 @@ Sometimes it is not possible to project (for example when the joints form a cycl
     </member>
     <member name="M:UnityEngine.ContactFilter2D.ClearDepth">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Turns off depth filtering by setting useDepth to false.  The associated values of minDepth and maxDepth are not changed.</para>
+=======
+        <para>Turns off depth filtering by simply setting useDepth to false.  The associated values of minDepth and maxDepth are not changed.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="M:UnityEngine.ContactFilter2D.ClearLayerMask">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Turns off layer mask filtering by setting useLayerMask to false.  The associated value of layerMask is not changed.</para>
+=======
+        <para>Turns off layer mask filtering by simple setting useLayerMask to false.  The associated value of layerMask is not changed.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="M:UnityEngine.ContactFilter2D.ClearNormalAngle">
@@ -12265,6 +12295,7 @@ Sometimes it is not possible to project (for example when the joints form a cycl
         <para>Turns off normal angle filtering by setting useNormalAngle to false. The associated values of minNormalAngle and maxNormalAngle are not changed.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="M:UnityEngine.ContactFilter2D.IsFilteringDepth(UnityEngine.GameObject)">
       <summary>
         <para>Checks if the Transform for obj is within the depth range to be filtered.</para>
@@ -12310,6 +12341,8 @@ Sometimes it is not possible to project (for example when the joints form a cycl
         <para>Returns true when collider is excluded by the filter and false if otherwise.</para>
       </returns>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="M:UnityEngine.ContactFilter2D.NoFilter">
       <summary>
         <para>Sets the contact filter to not filter any ContactPoint2D.</para>
@@ -14491,6 +14524,7 @@ You can specify either the absolute path or the relative path. When the path you
       </summary>
     </member>
     <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.CreateAnimationClipPlayable(UnityEngine.Experimental.Director.PlayableGraph,UnityEngine.AnimationClip)">
+<<<<<<< .merge_file_a14588
       <summary>
         <para>Creates an AnimationClipPlayable in the PlayableGraph.</para>
       </summary>
@@ -14507,21 +14541,81 @@ You can specify either the absolute path or the relative path. When the path you
       <param name="inputCount">The number of inputs that the mixer will update.</param>
       <param name="normalizeWeights">Set to true if you want the system to force a weight normalization of the inputs. If true, the sum of all the inputs weights will always be 1.0.</param>
       <param name="graph">The PlayableGraph object.</param>
+=======
+      <summary>
+        <para>Creates an AnimationClipPlayable in the PlayableGraph.</para>
+      </summary>
+      <param name="graph">The PlayableGraph object.</param>
+      <param name="clip">The AnimationClip that will be added in the graph.</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>A PlayableHandle on the created Playable.</para>
       </returns>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.CreateAnimationOutput(UnityEngine.Experimental.Director.PlayableGraph,System.String,UnityEngine.Animator)">
       <summary>
         <para>Creates an AnimationPlayableOutput in the PlayableGraph. When the AnimationPlayableOutput.sourcePlayable is set, the Animator will be playing the Playable.</para>
       </summary>
       <param name="name">The name of output.</param>
       <param name="target">The target that will Play the AnimationPlayableOutput.sourcePlayable.</param>
+=======
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.CreateAnimationMixerPlayable(UnityEngine.Experimental.Director.PlayableGraph,System.Int32,System.Boolean)">
+      <summary>
+        <para>Creates an AnimationMixerPlayable in the PlayableGraph.</para>
+      </summary>
+      <param name="inputCount">The number of inputs that the mixer will update.</param>
+      <param name="normalizeWeights">Set to true if you want the system to force a weight normalization of the inputs. If true, the sum of all the inputs weights will always be 1.0.</param>
+>>>>>>> .merge_file_a12240
       <param name="graph">The PlayableGraph object.</param>
       <returns>
         <para>A PlayableHandle on the created Playable.</para>
       </returns>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.CreateAnimatorControllerPlayable(UnityEngine.Experimental.Director.PlayableGraph,UnityEngine.RuntimeAnimatorController)">
+      <summary>
+        <para>Creates an AnimatorControllerPlayable in the PlayableGraph.</para>
+      </summary>
+      <param name="controller">The RuntimeAnimatorController that will be added in the graph.</param>
+=======
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.CreateAnimationOutput(UnityEngine.Experimental.Director.PlayableGraph,System.String,UnityEngine.Animator)">
+      <summary>
+        <para>Creates an AnimationPlayableOutput in the PlayableGraph. When the AnimationPlayableOutput.sourcePlayable is set, the Animator will be playing the Playable.</para>
+      </summary>
+      <param name="name">The name of output.</param>
+      <param name="target">The target that will Play the AnimationPlayableOutput.sourcePlayable.</param>
+>>>>>>> .merge_file_a12240
+      <param name="graph">The PlayableGraph object.</param>
+      <returns>
+        <para>A PlayableHandle on the created Playable.</para>
+      </returns>
+    </member>
+<<<<<<< .merge_file_a14588
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.DestroyOutput(UnityEngine.Experimental.Director.PlayableGraph,UnityEngine.Experimental.Director.AnimationPlayableOutput)">
+      <summary>
+        <para>Destroys the PlayableOutput.</para>
+      </summary>
+      <param name="output">The output that will be destroyed.</param>
+      <param name="graph">The PlayableGraph object.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.GetAnimationOutput(UnityEngine.Experimental.Director.PlayableGraph,System.Int32)">
+      <summary>
+        <para>Returns the AnimationPlayableOutput at the given index.</para>
+      </summary>
+      <param name="index">The index of the AnimationPlayableOutput.</param>
+      <param name="graph"></param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.GetAnimationOutputCount(UnityEngine.Experimental.Director.PlayableGraph)">
+      <summary>
+        <para>Gets the number of AnimationPlayableOutput in the PlayableGraph.</para>
+      </summary>
+      <param name="graph"></param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.AnimationPlayableOutput">
+      <summary>
+        <para>Animation output for the PlayableGraph.  Defines how a Playable is connected to an Animator.</para>
+=======
     <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.CreateAnimatorControllerPlayable(UnityEngine.Experimental.Director.PlayableGraph,UnityEngine.RuntimeAnimatorController)">
       <summary>
         <para>Creates an AnimatorControllerPlayable in the PlayableGraph.</para>
@@ -14549,9 +14643,50 @@ You can specify either the absolute path or the relative path. When the path you
     <member name="M:UnityEngine.Experimental.Director.AnimationPlayableGraphExtensions.GetAnimationOutputCount(UnityEngine.Experimental.Director.PlayableGraph)">
       <summary>
         <para>Gets the number of AnimationPlayableOutput in the PlayableGraph.</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <param name="graph"></param>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="P:UnityEngine.Experimental.Director.AnimationPlayableOutput.sourcePlayable">
+      <summary>
+        <para>The Playable that is bound to the output.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.AnimationPlayableOutput.target">
+      <summary>
+        <para>The Animator component that is bound to this output.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.AnimationPlayableOutput.userData">
+      <summary>
+        <para>Used to pass custom data to ScriptPlayable.ProcessFrame.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.AnimationPlayableOutput.weight">
+      <summary>
+        <para>The blend weight of the sourcePlayable to the animator.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableOutput.IsValid">
+      <summary>
+        <para>Returns true if the PlayableOutput has been properly constructed by the PlayableGraph and has not been destroyed.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.AnimationPlayableOutput.Null">
+      <summary>
+        <para>Used to compare against AnimationPlayableOutput instances to check their validity.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.AnimationPlayableUtilities">
+      <summary>
+        <para>Implements high-level utility methods to simplify use of the Playable API with Animations.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableUtilities.Play(UnityEngine.Animator,UnityEngine.Experimental.Director.PlayableHandle,UnityEngine.Experimental.Director.PlayableGraph)">
+      <summary>
+        <para>Plays the Playable on  the given Animator.</para>
+=======
     <member name="T:UnityEngine.Experimental.Director.AnimationPlayableOutput">
       <summary>
         <para>Animation output for the PlayableGraph.  Defines how a Playable is connected to an Animator.</para>
@@ -14590,8 +14725,47 @@ You can specify either the absolute path or the relative path. When the path you
     <member name="T:UnityEngine.Experimental.Director.AnimationPlayableUtilities">
       <summary>
         <para>Implements high-level utility methods to simplify use of the Playable API with Animations.</para>
+>>>>>>> .merge_file_a12240
       </summary>
+      <param name="animator">Target Animator.</param>
+      <param name="playable">The Playable that will be played.</param>
+      <param name="graph">The Graph that owns the Playable.</param>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableUtilities.PlayAnimatorController(UnityEngine.Animator,UnityEngine.RuntimeAnimatorController,UnityEngine.Experimental.Director.PlayableGraph&amp;)">
+      <summary>
+        <para>Creates a PlayableGraph to be played on the given Animator. An AnimatorControllerPlayable is also created for the given RuntimeAnimatorController.</para>
+      </summary>
+      <param name="animator">Target Animator.</param>
+      <param name="controller">The RuntimeAnimatorController to create an AnimatorControllerPlayable for.</param>
+      <param name="graph">The created PlayableGraph.</param>
+      <returns>
+        <para>A handle to the newly-created AnimatorControllerPlayable.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableUtilities.PlayClip(UnityEngine.Animator,UnityEngine.AnimationClip,UnityEngine.Experimental.Director.PlayableGraph&amp;)">
+      <summary>
+        <para>Creates a PlayableGraph to be played on the given Animator. An AnimationClipPlayable is also created for the given AnimationClip.</para>
+      </summary>
+      <param name="animator">Target Animator.</param>
+      <param name="clip">The AnimationClip to create an AnimationClipPlayable for.</param>
+      <param name="graph">The created PlayableGraph.</param>
+      <returns>
+        <para>A handle to the newly-created AnimationClipPlayable.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.AnimationPlayableUtilities.PlayMixer(UnityEngine.Animator,System.Int32,UnityEngine.Experimental.Director.PlayableGraph&amp;)">
+      <summary>
+        <para>Creates a PlayableGraph to be played on the given Animator. An AnimationMixerPlayable is also created.</para>
+      </summary>
+      <param name="animator">Target Animator.</param>
+      <param name="inputCount">The input count for the AnimationMixerPlayable.</param>
+      <param name="graph">The created PlayableGraph.</param>
+      <returns>
+        <para>A handle to the newly-created AnimationMixerPlayable.</para>
+      </returns>
+    </member>
+=======
     <member name="M:UnityEngine.Experimental.Director.AnimationPlayableUtilities.Play(UnityEngine.Animator,UnityEngine.Experimental.Director.PlayableHandle,UnityEngine.Experimental.Director.PlayableGraph)">
       <summary>
         <para>Plays the Playable on  the given Animator.</para>
@@ -14633,6 +14807,7 @@ You can specify either the absolute path or the relative path. When the path you
         <para>A handle to the newly-created AnimationMixerPlayable.</para>
       </returns>
     </member>
+>>>>>>> .merge_file_a12240
     <member name="T:UnityEngine.Experimental.Director.AnimatorControllerPlayable">
       <summary>
         <para>Playable that plays a RuntimeAnimatorController. Can be used as an input to an AnimationPlayable.</para>
@@ -14957,6 +15132,10 @@ You can specify either the absolute path or the relative path. When the path you
       <param name="id"></param>
     </member>
     <member name="T:UnityEngine.Experimental.Director.AudioPlayableGraphExtensions">
+<<<<<<< .merge_file_a14588
+      <summary>
+        <para>Extends PlayableGraph for Audio.</para>
+=======
       <summary>
         <para>Extends PlayableGraph for Audio.</para>
       </summary>
@@ -15938,6 +16117,7 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
     <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.inputFilter">
       <summary>
         <para>Which subset of visible objects to render.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.rendererConfiguration">
@@ -15945,12 +16125,16 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
         <para>What kind of per-object data to setup during rendering.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="P:UnityEngine.Experimental.Director.FrameData.deltaTime">
+=======
     <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.shaderPassName">
       <summary>
         <para>Which shader pass to use.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.sorting">
+>>>>>>> .merge_file_a12240
       <summary>
         <para>How to sort objects during rendering.</para>
       </summary>
@@ -16040,6 +16224,31 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
         <para>Default input filter: render all objects.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="P:UnityEngine.Experimental.Director.FrameData.effectiveSpeed">
+      <summary>
+        <para>The accumulated speed of the Playable during the PlayableGraph traversal.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.FrameData.effectiveWeight">
+      <summary>
+        <para>The accumulated weight of the Playable during the PlayableGraph traversal.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.FrameData.evaluationType">
+      <summary>
+        <para>Indicates the type of evaluation that caused PlayableGraph.PrepareFrame to be called.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.FrameData.frameId">
+      <summary>
+        <para>The current frame identifier.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.FrameData.seekOccurred">
+      <summary>
+        <para>Indicates that the local time was explicitly set.</para>
+=======
     <member name="M:UnityEngine.Experimental.Rendering.InputFilter.SetQueuesOpaque">
       <summary>
         <para>Set to render only opaque objects.</para>
@@ -16063,10 +16272,21 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
     <member name="M:UnityEngine.Experimental.Rendering.IRenderPipeline.Render(UnityEngine.Experimental.Rendering.ScriptableRenderContext,UnityEngine.Camera[])">
       <summary>
         <para>Defines custom rendering for this RenderPipeline.</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <param name="renderContext">Structure that holds the rendering commands for this loop.</param>
       <param name="cameras">Cameras to render.</param>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="P:UnityEngine.Experimental.Director.FrameData.weight">
+      <summary>
+        <para>The weight of the current Playable.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.FrameData.EvaluationType">
+      <summary>
+        <para>Describes the cause for the evaluation of a PlayableGraph.</para>
+=======
     <member name="?:UnityEngine.Experimental.Rendering.IRenderPipelineAsset">
       <summary>
         <para>An asset that produces a specific IRenderPipeline.</para>
@@ -16075,11 +16295,22 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
     <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.CreatePipeline">
       <summary>
         <para>Create a IRenderPipeline specific to this asset.</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <returns>
         <para>Created pipeline.</para>
       </returns>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="F:UnityEngine.Experimental.Director.FrameData.EvaluationType.Evaluate">
+      <summary>
+        <para>Indicates the graph was updated due to a call to PlayableGraph.Evaluate.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Director.FrameData.EvaluationType.Playback">
+      <summary>
+        <para>Indicates the graph was called by the runtime during normal playback due to PlayableGraph.Play being called.</para>
+=======
     <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.DestroyCreatedInstances">
       <summary>
         <para>Override this method to destroy RenderPipeline cached state.</para>
@@ -16098,6 +16329,7 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
     <member name="F:UnityEngine.Experimental.Rendering.LODParameters.cameraPosition">
       <summary>
         <para>Camera position.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="F:UnityEngine.Experimental.Rendering.LODParameters.fieldOfView">
@@ -16348,6 +16580,1102 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
         <para>Light flags, see VisibleLightFlags.</para>
       </summary>
     </member>
+<<<<<<< .merge_file_a14588
+    <member name="F:UnityEngine.Experimental.Director.Playable.handle">
+      <summary>
+        <para>Returns the PlayableHandle for this playable.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.Playable.IsValid">
+      <summary>
+        <para>Returns true if the Playable is valid. A playable can be invalid if it was disposed. This is different from a Null playable.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.PlayableGraph">
+      <summary>
+        <para>The PlayableGraph is used to manage PlayableHandle creation, destruction and connections.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableGraph.isDone">
+      <summary>
+        <para>Indicates that a graph has completed its operations.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableGraph.playableCount">
+      <summary>
+        <para>Returns the number of PlayableHandle owned by the Graph.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableGraph.rootPlayableCount">
+      <summary>
+        <para>Returns the number of PlayableHandle owned by the Graph that have no connected outputs.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableGraph.scriptOutputCount">
+      <summary>
+        <para>Gets the number of ScriptPlayableOutput in the PlayableGraph.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Connect(UnityEngine.Experimental.Director.PlayableHandle,System.Int32,UnityEngine.Experimental.Director.PlayableHandle,System.Int32)">
+      <summary>
+        <para>Connects two Playable instances, either by referencing the Playable instances themselves or by their PlayableHandles.</para>
+      </summary>
+      <param name="source">The source playable or its handle.</param>
+      <param name="sourceOutputPort">The port used in the source playable.</param>
+      <param name="destination">The destination playable or its handle.</param>
+      <param name="destinationInputPort">The port used in the destination playable.</param>
+      <returns>
+        <para>Returns true if connection is successful.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Connect(UnityEngine.Experimental.Director.Playable,System.Int32,UnityEngine.Experimental.Director.Playable,System.Int32)">
+      <summary>
+        <para>Connects two Playable instances, either by referencing the Playable instances themselves or by their PlayableHandles.</para>
+      </summary>
+      <param name="source">The source playable or its handle.</param>
+      <param name="sourceOutputPort">The port used in the source playable.</param>
+      <param name="destination">The destination playable or its handle.</param>
+      <param name="destinationInputPort">The port used in the destination playable.</param>
+      <returns>
+        <para>Returns true if connection is successful.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.CreateGenericMixerPlayable(System.Int32)">
+      <summary>
+        <para>Creates a generic ScriptPlayable mixer.</para>
+      </summary>
+      <param name="inputCount">The number of input.</param>
+      <returns>
+        <para>The created Playable.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.CreateGraph">
+      <summary>
+        <para>Creates a PlayableGraph.</para>
+      </summary>
+      <returns>
+        <para>The created graph.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.CreatePlayable">
+      <summary>
+        <para>This method allows you to create custom Playable instances.</para>
+      </summary>
+      <returns>
+        <para>The created Playable.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.CreateScriptOutput(System.String)">
+      <summary>
+        <para>Creates a ScriptPlayableOutput in the [PlayableGraph]].</para>
+      </summary>
+      <param name="name">The name of the output.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.CreateScriptPlayable">
+      <summary>
+        <para>Creates a ScriptPlayable in the PlayableGraph.</para>
+      </summary>
+      <returns>
+        <para>A PlayableHandle on the created Playable.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Destroy">
+      <summary>
+        <para>Destroys the graph.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.DestroyOutput(UnityEngine.Experimental.Director.ScriptPlayableOutput)">
+      <summary>
+        <para>Destroys the PlayableOutput.</para>
+      </summary>
+      <param name="output">The output to destroy.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.DestroyOutput">
+      <summary>
+        <para>Destroys the PlayableOutput.</para>
+      </summary>
+      <param name="output">The output to destroy.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.DestroyPlayable(UnityEngine.Experimental.Director.PlayableHandle)">
+      <summary>
+        <para>Destroys the Playable associated with this PlayableHandle.</para>
+      </summary>
+      <param name="playable">The playable to destroy.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.DestroySubgraph(UnityEngine.Experimental.Director.PlayableHandle)">
+      <summary>
+        <para>Recursively destroys the given Playable and all children connected to its inputs.</para>
+      </summary>
+      <param name="playable">The playable to destroy.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Disconnect(UnityEngine.Experimental.Director.Playable,System.Int32)">
+      <summary>
+        <para>Disconnects PlayableHandle.  The connections determine the topology of the PlayableGraph and how its is evaluated.</para>
+      </summary>
+      <param name="playable">The source playabe or its handle.</param>
+      <param name="inputPort">The port used in the source playable.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Disconnect(UnityEngine.Experimental.Director.PlayableHandle,System.Int32)">
+      <summary>
+        <para>Disconnects PlayableHandle.  The connections determine the topology of the PlayableGraph and how its is evaluated.</para>
+      </summary>
+      <param name="playable">The source playabe or its handle.</param>
+      <param name="inputPort">The port used in the source playable.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Evaluate(System.Single)">
+      <summary>
+        <para>Evaluates all the PlayableOutputs in the graph, and updates all the connected Playables in the graph.</para>
+      </summary>
+      <param name="deltaTime">The time in seconds by which to advance each Playable in the graph.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.GetRootPlayable(System.Int32)">
+      <summary>
+        <para>Returns the PlayableHandle with no output connections at the given index.</para>
+      </summary>
+      <param name="index">The index of the root PlayableHandle.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.GetScriptOutput(System.Int32)">
+      <summary>
+        <para>Returns the ScriptPlayableOutput at the given index.</para>
+      </summary>
+      <param name="index">The index of the ScriptPlayableOutput.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.IsValid">
+      <summary>
+        <para>Returns true if the PlayableGraph has been properly constructed using PlayableGraph.CreateGraph and is not deleted.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Play">
+      <summary>
+        <para>Plays the graph.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableGraph.Stop">
+      <summary>
+        <para>Stops the graph, if it is playing.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.PlayableHandle">
+      <summary>
+        <para>Handle representing a Playable created in a PlayableGraph. The PlayableHandle implements all general usage Playable methods.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.duration">
+      <summary>
+        <para>The duration of the Playable in seconds.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.graph">
+      <summary>
+        <para>The PlayableGraph that created the playable.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.inputCount">
+      <summary>
+        <para>Gets and Sets the number of inputs for the  Playable.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.isDone">
+      <summary>
+        <para>A flag indicating that a playable has completed its operation.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.outputCount">
+      <summary>
+        <para>Gets and Sets the number of outputs for the  Playable.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.playState">
+      <summary>
+        <para>When playing, the time will advance in the Playable during evaluation of the graph.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.speed">
+      <summary>
+        <para>Modulates how time is incremented when the Playable is playing.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.time">
+      <summary>
+        <para>The current  time of the Playable.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.Destroy">
+      <summary>
+        <para>Destroys the Playable associated with this PlayableHandle.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.GetInput(System.Int32)">
+      <summary>
+        <para>Returns the PlayableHandle connected at the given input port index.</para>
+      </summary>
+      <param name="inputPort">The port index.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.GetInputWeight(System.Int32)">
+      <summary>
+        <para>Returns the weight of the Playable connected at the given input port index.</para>
+      </summary>
+      <param name="inputIndex">The port index.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.GetObject">
+      <summary>
+        <para>Returns a Playable representation of the handle.</para>
+      </summary>
+      <returns>
+        <para>The Playable represented by this handle.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.GetObject">
+      <summary>
+        <para>Returns a Playable representation of the handle.</para>
+      </summary>
+      <returns>
+        <para>The Playable represented by this handle.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.GetOutput(System.Int32)">
+      <summary>
+        <para>Returns the PlayableHandle connected at the given ouput port index.</para>
+      </summary>
+      <param name="outputPort">The port index.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.IsValid">
+      <summary>
+        <para>Returns true if the Playable is properly constructed by the PlayableGraph and has not been destroyed.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.PlayableHandle.Null">
+      <summary>
+        <para>Used to compare PlayableHandles.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.PlayableHandle.SetInputWeight(System.Int32,System.Single)">
+      <summary>
+        <para>Sets the weight of the Playable connected at the given input port index.</para>
+      </summary>
+      <param name="inputIndex">The port index.</param>
+      <param name="weight">The weight. Should be between 0 and 1.</param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.PlayState">
+      <summary>
+        <para>Status of a Playable.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Director.PlayState.Paused">
+      <summary>
+        <para>The Playable has been paused. Its local time will not advance.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Director.PlayState.Playing">
+      <summary>
+        <para>The Playable is currently Playing.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.ScriptPlayable">
+      <summary>
+        <para>Base class for all user-defined playables.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayable.OnDestroy">
+      <summary>
+        <para>Called when the Playable is destroyed.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayable.OnGraphStart">
+      <summary>
+        <para>Called when the PlayableGraph this Playable is owned by starts playing.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayable.OnGraphStop">
+      <summary>
+        <para>Called when the PlayableGraph this Playable is owned by is stopped.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayable.OnPlayStateChanged(UnityEngine.Experimental.Director.FrameData,UnityEngine.Experimental.Director.PlayState)">
+      <summary>
+        <para>Override this method to perform custom operations when the PlayState changes.</para>
+      </summary>
+      <param name="info">The current frame information.</param>
+      <param name="newState">The new PlayState.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayable.PrepareFrame(UnityEngine.Experimental.Director.FrameData)">
+      <summary>
+        <para>Called during evaluation of the PlayableGraph.</para>
+      </summary>
+      <param name="info">Information about the current frame.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayable.ProcessFrame(UnityEngine.Experimental.Director.FrameData,System.Object)">
+      <summary>
+        <para>The ProcessFrame is the stage at which your Playable should do its work.</para>
+      </summary>
+      <param name="info">Information about the current frame.</param>
+      <param name="playerData">Data that is set on the playable output userData.</param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Director.ScriptPlayableOutput">
+      <summary>
+        <para>Script output for the Graph. ScriptPlayable can be used to write custom Playable that implement their own PrepareFrame callback.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.ScriptPlayableOutput.sourcePlayable">
+      <summary>
+        <para>The Playable that is bound to the output.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.ScriptPlayableOutput.userData">
+      <summary>
+        <para>Used to pass custom data to ScriptPlayable.ProcessFrame.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Director.ScriptPlayableOutput.IsValid">
+      <summary>
+        <para>Returns true if the PlayableOutput is properly constructed by the PlayableGraph and has not been destroyed.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Director.ScriptPlayableOutput.Null">
+      <summary>
+        <para>Used to compare ScriptPlayableOutput.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.CullingParameters">
+      <summary>
+        <para>Parameters controlling culling process in CullResults.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.cullingMask">
+      <summary>
+        <para>Layer mask used for culling.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.cullingMatrix">
+      <summary>
+        <para>World to clip space matrix.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.cullingPlaneCount">
+      <summary>
+        <para>Number of culling planes to use.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.isOrthographic">
+      <summary>
+        <para>True if camera is orthographic (this affects LOD culling).</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.lodParameters">
+      <summary>
+        <para>LODGroup culling parameters.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.position">
+      <summary>
+        <para>Camera position.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.reflectionProbeSortOptions">
+      <summary>
+        <para>Visible reflection probes sorting options.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullingParameters.shadowDistance">
+      <summary>
+        <para>Realtime shadows distance.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullingParameters.GetCullingPlane(System.Int32)">
+      <summary>
+        <para>Get a culling plane.</para>
+      </summary>
+      <param name="index">Plane index (up to cullingPlaneCount).</param>
+      <returns>
+        <para>Culling plane.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullingParameters.GetLayerCullDistance(System.Int32)">
+      <summary>
+        <para>Get per-layer culling distance.</para>
+      </summary>
+      <param name="layerIndex">Game object layer index (0 to 31).</param>
+      <returns>
+        <para>Distance beyond which objects in this layer are culled.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullingParameters.SetCullingPlane(System.Int32,UnityEngine.Plane)">
+      <summary>
+        <para>Set a culling plane.</para>
+      </summary>
+      <param name="index">Plane index (up to cullingPlaneCount).</param>
+      <param name="plane">Culling plane.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullingParameters.SetLayerCullDistance(System.Int32,System.Single)">
+      <summary>
+        <para>Set per-layer culling distance.</para>
+      </summary>
+      <param name="layerIndex">Game object layer index (0 to 31).</param>
+      <param name="distance">Distance beyond which objects in this layer are culled.</param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.CullResults">
+      <summary>
+        <para>Culling results (visible objects, lights, reflection probes).</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullResults.visibleLights">
+      <summary>
+        <para>Array of visible lights.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.CullResults.visibleReflectionProbes">
+      <summary>
+        <para>Array of visible reflection probes.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.ComputeDirectionalShadowMatricesAndCullingPrimitives(System.Int32,System.Int32,System.Int32,UnityEngine.Vector3,System.Int32,System.Single,UnityEngine.Matrix4x4&amp;,UnityEngine.Matrix4x4&amp;,UnityEngine.Experimental.Rendering.ShadowSplitData&amp;)">
+      <summary>
+        <para>Calculates the view and projection matrices and shadow split data for a directional light.</para>
+      </summary>
+      <param name="activeLightIndex">The index into the active light array.</param>
+      <param name="splitIndex">The cascade index.</param>
+      <param name="splitCount">The number of cascades.</param>
+      <param name="splitRatio">The cascade ratios.</param>
+      <param name="shadowResolution">The resolution of the shadowmap.</param>
+      <param name="shadowNearPlaneOffset">The near plane offset for the light.</param>
+      <param name="viewMatrix">The computed view matrix.</param>
+      <param name="projMatrix">The computed projection matrix.</param>
+      <param name="shadowSplitData">The computed cascade data.</param>
+      <returns>
+        <para>If false, the shadow map for this cascade does not need to be rendered this frame.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.ComputePointShadowMatricesAndCullingPrimitives(System.Int32,UnityEngine.CubemapFace,System.Single,UnityEngine.Matrix4x4&amp;,UnityEngine.Matrix4x4&amp;,UnityEngine.Experimental.Rendering.ShadowSplitData&amp;)">
+      <summary>
+        <para>Calculates the view and projection matrices and shadow split data for a point light.</para>
+      </summary>
+      <param name="activeLightIndex">The index into the active light array.</param>
+      <param name="cubemapFace">The cubemap face to be rendered.</param>
+      <param name="fovBias">The amount by which to increase the camera FOV above 90 degrees.</param>
+      <param name="viewMatrix">The computed view matrix.</param>
+      <param name="projMatrix">The computed projection matrix.</param>
+      <param name="shadowSplitData">The computed split data.</param>
+      <returns>
+        <para>If false, the shadow map for this light and cubemap face does not need to be rendered this frame.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.ComputeSpotShadowMatricesAndCullingPrimitives(System.Int32,UnityEngine.Matrix4x4&amp;,UnityEngine.Matrix4x4&amp;,UnityEngine.Experimental.Rendering.ShadowSplitData&amp;)">
+      <summary>
+        <para>Calculates the view and projection matrices and shadow split data for a spot light.</para>
+      </summary>
+      <param name="activeLightIndex">The index into the active light array.</param>
+      <param name="viewMatrix">The computed view matrix.</param>
+      <param name="projMatrix">The computed projection matrix.</param>
+      <param name="shadowSplitData">The computed split data.</param>
+      <returns>
+        <para>If false, the shadow map for this light does not need to be rendered this frame.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.Cull">
+      <summary>
+        <para>Perform culling for a Camera.</para>
+      </summary>
+      <param name="camera">Camera to cull for.</param>
+      <param name="renderLoop">Render loop the culling results will be used with.</param>
+      <param name="results">Culling results.</param>
+      <returns>
+        <para>Flag indicating whether culling succeeded.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.Cull">
+      <summary>
+        <para>Perform culling with custom CullingParameters.</para>
+      </summary>
+      <param name="parameters">Parameters for culling.</param>
+      <param name="renderLoop">Render loop the culling results will be used with.</param>
+      <returns>
+        <para>Culling results.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.FillLightIndices(UnityEngine.ComputeBuffer)">
+      <summary>
+        <para>Fills a compute buffer with per-object light indices.</para>
+      </summary>
+      <param name="computeBuffer">The compute buffer object to fill.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.GetCullingParameters(UnityEngine.Camera,UnityEngine.Experimental.Rendering.CullingParameters&amp;)">
+      <summary>
+        <para>Get culling parameters for a camera.</para>
+      </summary>
+      <param name="camera">Camera to get parameters for.</param>
+      <param name="cullingParameters">Result culling parameters.</param>
+      <returns>
+        <para>Flag indicating whether culling parameters are valid.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.GetLightIndicesCount">
+      <summary>
+        <para>Gets the number of per-object light indices.</para>
+      </summary>
+      <returns>
+        <para>The number of per-object light indices.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.CullResults.GetShadowCasterBounds(System.Int32,UnityEngine.Bounds&amp;)">
+      <summary>
+        <para>Returns the bounding box that encapsulates the visible shadow casters.  Can be used to, for instance, dynamically adjust cascade ranges.</para>
+      </summary>
+      <param name="lightIndex">The index of the shadow-casting light.</param>
+      <param name="outBounds">The bounds to be computed.</param>
+      <returns>
+        <para>True if the light affects at least one shadow casting object in the scene.</para>
+      </returns>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.DrawRendererFlags">
+      <summary>
+        <para>Flags controlling RenderLoop.DrawRenderers.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererFlags.EnableDynamicBatching">
+      <summary>
+        <para>When set, enables dynamic batching.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererFlags.EnableInstancing">
+      <summary>
+        <para>When set, enables GPU instancing.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererFlags.None">
+      <summary>
+        <para>No flags are set.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.DrawRendererSettings">
+      <summary>
+        <para>Settings for RenderLoop.DrawRenderers.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Rendering.DrawRendererSettings.cullResults">
+      <summary>
+        <para>Culling results to use.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.flags">
+      <summary>
+        <para>Other flags controlling object rendering.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.inputFilter">
+      <summary>
+        <para>Which subset of visible objects to render.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.rendererConfiguration">
+      <summary>
+        <para>What kind of per-object data to setup during rendering.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.shaderPassName">
+      <summary>
+        <para>Which shader pass to use.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSettings.sorting">
+      <summary>
+        <para>How to sort objects during rendering.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.DrawRendererSettings.#ctor(UnityEngine.Experimental.Rendering.CullResults,UnityEngine.Camera,UnityEngine.Experimental.Rendering.ShaderPassName)">
+      <summary>
+        <para>Create a draw settings struct.</para>
+      </summary>
+      <param name="cullResults">Culling results to use.</param>
+      <param name="camera">Camera to use. Camera's transparency sort mode is used to determine whether to use orthographic or distance based sorting.</param>
+      <param name="shaderPassName">Shader pass to use.</param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.DrawRendererSortSettings">
+      <summary>
+        <para>Describes how to sort objects during rendering.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.cameraPosition">
+      <summary>
+        <para>Camera position, used to determine distances to objects.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.flags">
+      <summary>
+        <para>What kind of sorting to do while rendering.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.sortOrthographic">
+      <summary>
+        <para>Should orthographic sorting be used?</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.worldToCameraMatrix">
+      <summary>
+        <para>Camera view matrix, used to determine distances to objects.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.DrawShadowsSettings">
+      <summary>
+        <para>Settings for RenderLoop.DrawShadows.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Rendering.DrawShadowsSettings.cullResults">
+      <summary>
+        <para>Culling results to use.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawShadowsSettings.lightIndex">
+      <summary>
+        <para>The index of the shadow-casting light to be rendered.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.DrawShadowsSettings.splitData">
+      <summary>
+        <para>The split data.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.DrawShadowsSettings.#ctor(UnityEngine.Experimental.Rendering.CullResults,System.Int32)">
+      <summary>
+        <para>Create a shadow settings object.</para>
+      </summary>
+      <param name="cullResults">The cull results for this light.</param>
+      <param name="lightIndex">The light index.</param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.InputFilter">
+      <summary>
+        <para>Describes which subset of visible objects to render.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.InputFilter.layerMask">
+      <summary>
+        <para>Only render objects in the given layer mask.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.InputFilter.renderQueueMax">
+      <summary>
+        <para>Render objects that have material render queue smaller or equal to this.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.InputFilter.renderQueueMin">
+      <summary>
+        <para>Render objects that have material render queue larger or equal to this.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.InputFilter.Default">
+      <summary>
+        <para>Default input filter: render all objects.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.InputFilter.SetQueuesOpaque">
+      <summary>
+        <para>Set to render only opaque objects.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.InputFilter.SetQueuesTransparent">
+      <summary>
+        <para>Set to render only transparent objects.</para>
+      </summary>
+    </member>
+    <member name="?:UnityEngine.Experimental.Rendering.IRenderPipeline">
+      <summary>
+        <para>Defines a series of commands and settings that describes how Unity renders a frame.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Rendering.IRenderPipeline.disposed">
+      <summary>
+        <para>When the IRenderPipeline is invalid or destroyed this returns true.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipeline.Render(UnityEngine.Experimental.Rendering.ScriptableRenderContext,UnityEngine.Camera[])">
+      <summary>
+        <para>Defines custom rendering for this RenderPipeline.</para>
+=======
+    <member name="P:UnityEngine.Experimental.Rendering.VisibleLight.light">
+      <summary>
+        <para>Accessor to Light component.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.lightType">
+      <summary>
+        <para>Light type.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.localToWorld">
+      <summary>
+        <para>Light transformation matrix.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.range">
+      <summary>
+        <para>Light range.</para>
+>>>>>>> .merge_file_a12240
+      </summary>
+      <param name="renderContext">Structure that holds the rendering commands for this loop.</param>
+      <param name="cameras">Cameras to render.</param>
+    </member>
+<<<<<<< .merge_file_a14588
+    <member name="?:UnityEngine.Experimental.Rendering.IRenderPipelineAsset">
+      <summary>
+        <para>An asset that produces a specific IRenderPipeline.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.CreatePipeline">
+      <summary>
+        <para>Create a IRenderPipeline specific to this asset.</para>
+      </summary>
+      <returns>
+        <para>Created pipeline.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.DestroyCreatedInstances">
+      <summary>
+        <para>Override this method to destroy RenderPipeline cached state.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.LODParameters">
+      <summary>
+        <para>LODGroup culling parameters.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.LODParameters.cameraPixelHeight">
+      <summary>
+        <para>Rendering view height in pixels.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.LODParameters.cameraPosition">
+      <summary>
+        <para>Camera position.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.LODParameters.fieldOfView">
+      <summary>
+        <para>Camera's field of view.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.LODParameters.isOrthographic">
+      <summary>
+        <para>Indicates whether camera is orthographic.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.LODParameters.orthoSize">
+      <summary>
+        <para>Orhographic camera size.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions">
+      <summary>
+        <para>Visible reflection probes sorting options.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.Importance">
+      <summary>
+        <para>Sort probes by importance.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.ImportanceThenSize">
+      <summary>
+        <para>Sort probes by importance, then by size.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.None">
+      <summary>
+        <para>Do not sort reflection probes.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.Size">
+      <summary>
+        <para>Sort probes from largest to smallest.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.RendererConfiguration">
+      <summary>
+        <para>What kind of per-object data to setup during rendering.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.None">
+      <summary>
+        <para>Do not setup any particular per-object data besides the transformation matrix.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectLightmaps">
+      <summary>
+        <para>Setup per-object lightmaps.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectLightProbe">
+      <summary>
+        <para>Setup per-object light probe SH data.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectLightProbeProxyVolume">
+      <summary>
+        <para>Setup per-object light probe proxy volume data.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectReflectionProbes">
+      <summary>
+        <para>Setup per-object reflection probe data.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.ProvideLightIndices">
+      <summary>
+        <para>Setup per-object light indices.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.RenderPipelineAsset">
+      <summary>
+        <para>An asset that produces a specific IRenderPipeline.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.CreatePipeline">
+      <summary>
+        <para>Create a IRenderPipeline specific to this asset.</para>
+      </summary>
+      <returns>
+        <para>Created pipeline.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.DestroyCreatedInstances">
+      <summary>
+        <para>Destroys all cached data and created IRenderLoop's.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.InternalCreatePipeline">
+      <summary>
+        <para>Create a IRenderPipeline specific to this asset.</para>
+      </summary>
+      <returns>
+        <para>Created pipeline.</para>
+      </returns>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.ScriptableRenderContext">
+      <summary>
+        <para>Defines state and drawing commands used in a custom render pipelines.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ScriptableRenderContext.DrawRenderers(UnityEngine.Experimental.Rendering.DrawRendererSettings&amp;)">
+      <summary>
+        <para>Draw subset of visible objects.</para>
+      </summary>
+      <param name="settings">Specifies which set of visible objects to draw, and how to draw them.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ScriptableRenderContext.DrawShadows(UnityEngine.Experimental.Rendering.DrawShadowsSettings&amp;)">
+      <summary>
+        <para>Draw shadow casters for a single light.</para>
+      </summary>
+      <param name="settings">Specifies which set of shadow casters to draw, and how to draw them.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ScriptableRenderContext.DrawSkybox(UnityEngine.Camera)">
+      <summary>
+        <para>Draw skybox.</para>
+      </summary>
+      <param name="camera">Camera to draw the skybox for.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ScriptableRenderContext.ExecuteCommandBuffer(UnityEngine.Rendering.CommandBuffer)">
+      <summary>
+        <para>Execute a custom graphics command buffer.</para>
+      </summary>
+      <param name="commandBuffer">Command buffer to execute.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ScriptableRenderContext.SetupCameraProperties(UnityEngine.Camera)">
+      <summary>
+        <para>Setup camera specific global shader variables.</para>
+      </summary>
+      <param name="camera">Camera to setup shader variables for.</param>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ScriptableRenderContext.Submit">
+      <summary>
+        <para>Submit rendering loop for execution.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.ShaderPassName">
+      <summary>
+        <para>Shader pass name identifier.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ShaderPassName.#ctor(System.String)">
+      <summary>
+        <para>Create shader pass name identifier.</para>
+      </summary>
+      <param name="name">Pass name.</param>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.ShadowSplitData">
+      <summary>
+        <para>Describes the culling information for a given shadow split (e.g. directional cascade).</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.ShadowSplitData.cullingPlaneCount">
+      <summary>
+        <para>The number of culling planes.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.ShadowSplitData.cullingSphere">
+      <summary>
+        <para>The culling sphere.  The first three components of the vector describe the sphere center, and the last component specifies the radius.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ShadowSplitData.GetCullingPlane(System.Int32)">
+      <summary>
+        <para>Gets a culling plane.</para>
+      </summary>
+      <param name="index">The culling plane index.</param>
+      <returns>
+        <para>The culling plane.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Experimental.Rendering.ShadowSplitData.SetCullingPlane(System.Int32,UnityEngine.Plane)">
+      <summary>
+        <para>Sets a culling plane.</para>
+=======
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.screenRect">
+      <summary>
+        <para>Light's influence rectangle on screen.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.spotAngle">
+      <summary>
+        <para>Spot light angle.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.VisibleLightFlags">
+      <summary>
+        <para>Flags for VisibleLight.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLightFlags.IntersectsFarPlane">
+      <summary>
+        <para>Light intersects far clipping plane.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLightFlags.IntersectsNearPlane">
+      <summary>
+        <para>Light intersects near clipping plane.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLightFlags.None">
+      <summary>
+        <para>No flags are set.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.VisibleReflectionProbe">
+      <summary>
+        <para>Holds data of a visible reflection probe.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.blendDistance">
+      <summary>
+        <para>Probe blending distance.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.bounds">
+      <summary>
+        <para>Probe bounding box.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.boxProjection">
+      <summary>
+        <para>Should probe use box projection.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.center">
+      <summary>
+        <para>Probe projection center.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.hdr">
+      <summary>
+        <para>Shader data for probe HDR texture decoding.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.importance">
+      <summary>
+        <para>Probe importance.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.localToWorld">
+      <summary>
+        <para>Probe transformation matrix.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.probe">
+      <summary>
+        <para>Accessor to ReflectionProbe component.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Experimental.Rendering.VisibleReflectionProbe.texture">
+      <summary>
+        <para>Probe texture.</para>
+>>>>>>> .merge_file_a12240
+      </summary>
+      <param name="index">The index of the culling plane to set.</param>
+      <param name="plane">The culling plane.</param>
+    </member>
+<<<<<<< .merge_file_a14588
+    <member name="T:UnityEngine.Experimental.Rendering.SortFlags">
+      <summary>
+        <para>How to sort objects during rendering.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.BackToFront">
+      <summary>
+        <para>Sort objects back to front.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.CanvasOrder">
+      <summary>
+        <para>Sort renderers taking canvas order into account.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.CommonOpaque">
+      <summary>
+        <para>Typical sorting for opaque objects.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.CommonTransparent">
+      <summary>
+        <para>Typical sorting for transparencies.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.None">
+      <summary>
+        <para>Do not sort objects.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.OptimizeStateChanges">
+      <summary>
+        <para>Sort objects to reduce draw state changes.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.QuantizedFrontToBack">
+      <summary>
+        <para>Sort objects in rough front-to-back buckets.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.RenderQueue">
+      <summary>
+        <para>Sort by material render queue.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.SortingLayer">
+      <summary>
+        <para>Sort by renderer sorting layer.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Experimental.Rendering.VisibleLight">
+      <summary>
+        <para>Holds data of a visible light.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.finalColor">
+      <summary>
+        <para>Light color multiplied by intensity.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.flags">
+      <summary>
+        <para>Light flags, see VisibleLightFlags.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.Experimental.Rendering.VisibleLight.light">
       <summary>
         <para>Accessor to Light component.</para>
@@ -16463,6 +17791,23 @@ A trigger parameter is a bool parameter that gets reset to false when it has bee
         <para>The default value, in case the value cannot be resolved.</para>
       </summary>
     </member>
+=======
+    <member name="T:UnityEngine.ExposedPropertyResolver">
+      <summary>
+        <para>Object that is used to resolve references to an ExposedReference field.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.ExposedReference`1">
+      <summary>
+        <para>Creates a type whos value is resolvable at runtime.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.ExposedReference_1.defaultValue">
+      <summary>
+        <para>The default value, in case the value cannot be resolved.</para>
+      </summary>
+    </member>
+>>>>>>> .merge_file_a12240
     <member name="F:UnityEngine.ExposedReference_1.exposedName">
       <summary>
         <para>The name of the ExposedReference.</para>
@@ -18232,6 +19577,7 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="layer"> to use.</param>
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be drawn in the given camera only.</param>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="M:UnityEngine.Graphics.DrawMeshInstanced(UnityEngine.Mesh,System.Int32,UnityEngine.Material,System.Collections.Generic.List`1&lt;UnityEngine.Matrix4x4&gt;,UnityEngine.MaterialPropertyBlock,UnityEngine.Rendering.ShadowCastingMode,System.Boolean,System.Int32,UnityEngine.Camera)">
       <summary>
         <para>Draw the same mesh multiple times using GPU instancing.</para>
@@ -18247,6 +19593,8 @@ The destination texture format should be uncompressed and correspond to a suppor
       <param name="layer"> to use.</param>
       <param name="camera">If null (default), the mesh will be drawn in all cameras. Otherwise it will be drawn in the given camera only.</param>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="M:UnityEngine.Graphics.DrawMeshInstancedIndirect(UnityEngine.Mesh,System.Int32,UnityEngine.Material,UnityEngine.Bounds,UnityEngine.ComputeBuffer,System.Int32,UnityEngine.MaterialPropertyBlock,UnityEngine.Rendering.ShadowCastingMode,System.Boolean,System.Int32,UnityEngine.Camera)">
       <summary>
         <para>Draw the same mesh multiple times using GPU instancing.</para>
@@ -31522,6 +32870,7 @@ Note that this default value is suitable for local testing only. Usually you sho
         <para>Defines the duration in milliseconds between keep-alive packets, also known as pings. Default value = 500.
 
 The ping frequency should be long enough to accumulate good statistics and short enough to compare with DisconnectTimeout. A good guideline is to have more than 3 pings per disconnect timeout, and more than 5 messages per ping. For example, with a DisconnectTimeout of 2000ms, a PingTimeout of 500ms works well.</para>
+<<<<<<< .merge_file_a14588
       </summary>
     </member>
     <member name="P:UnityEngine.Networking.ConnectionConfig.ResendTimeout">
@@ -31536,18 +32885,43 @@ It does not make a lot of sense to wait for acknowledgement forever. This parame
         <para>Gets or sets the delay in milliseconds after a call to Send() before packets are sent. During this time, new messages may be combined in queued packets. Default value: 10ms.</para>
       </summary>
     </member>
+=======
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Networking.ConnectionConfig.ResendTimeout">
+      <summary>
+        <para>Defines the maximum wait time in milliseconds before the "not acknowledged" message is re-sent. Default value = 1200.
+
+It does not make a lot of sense to wait for acknowledgement forever. This parameter sets an upper time limit at which point reliable messages are re-sent.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Networking.ConnectionConfig.SendDelay">
+      <summary>
+        <para>Gets or sets the delay in milliseconds after a call to Send() before packets are sent. During this time, new messages may be combined in queued packets. Default value: 10ms.</para>
+      </summary>
+    </member>
+>>>>>>> .merge_file_a12240
     <member name="P:UnityEngine.Networking.ConnectionConfig.SSLCAFilePath">
       <summary>
         <para>Defines the path to the file containing the certification authority (CA) certificate for WebSocket via SSL communication.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Networking.ConnectionConfig.SSLCertFilePath">
+<<<<<<< .merge_file_a14588
       <summary>
         <para>Defines path to SSL certificate file, for WebSocket via SSL communication.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Networking.ConnectionConfig.SSLPrivateKeyFilePath">
       <summary>
+=======
+      <summary>
+        <para>Defines path to SSL certificate file, for WebSocket via SSL communication.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Networking.ConnectionConfig.SSLPrivateKeyFilePath">
+      <summary>
+>>>>>>> .merge_file_a12240
         <para>Defines the path to the file containing the private key for WebSocket via SSL communication.</para>
       </summary>
     </member>
@@ -32683,6 +34057,17 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
         <para>Size of ack buffer.</para>
       </returns>
     </member>
+    <member name="M:UnityEngine.Networking.NetworkTransport.GetAckBufferCount(System.Int32,System.Int32,System.Byte&amp;)">
+      <summary>
+        <para>Returns size of reliable buffer.</para>
+      </summary>
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+      <returns>
+        <para>Size of ack buffer.</para>
+      </returns>
+    </member>
     <member name="M:UnityEngine.Networking.NetworkTransport.GetAssetId(UnityEngine.GameObject)">
       <summary>
         <para>The Unity Multiplayer spawning system uses assetIds to identify what remote objects to spawn. This function allows you to get the assetId for the prefab associated with an object.</para>
@@ -32737,9 +34122,15 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Return the round trip time for the given connectionId.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
+=======
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>Current round trip time in ms.</para>
       </returns>
@@ -32748,7 +34139,11 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Returns the number of received messages waiting in the queue for processing.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this queue.</param>
+=======
+      <param name="hostId">Host id associated with this queue.</param>
+>>>>>>> .merge_file_a12240
       <param name="error">Error code. Cast this value to Networking.NetworkError for more information.</param>
       <returns>
         <para>The number of messages in the queue.</para>
@@ -32758,16 +34153,26 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Returns how many packets have been received from start for connection.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
+=======
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>The absolute number of packets received since the connection was established.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Networking.NetworkTransport.GetIncomingPacketCountForAllHosts">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Returns how many packets have been received from start. (from Networking.NetworkTransport.Init call).</para>
+=======
+        <para>Returns how many packets have been received from start. (from Init() call).</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <returns>
         <para>Packets count received from start for all hosts.</para>
@@ -32785,9 +34190,15 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Returns how many incoming packets have been lost due transmitting (dropped by network).</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
+=======
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>The absolute number of packets that have been lost since the connection was established.</para>
       </returns>
@@ -32796,9 +34207,15 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Gets the currently-allowed network bandwidth in bytes per second. The value returned can vary because bandwidth can be throttled by flow control. If the bandwidth is throttled to zero, the connection is disconnected.ted.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
+=======
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>Currently-allowed bandwidth in bytes per second.</para>
       </returns>
@@ -32827,6 +34244,7 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
         <para>Timestamp.</para>
       </returns>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="M:UnityEngine.Networking.NetworkTransport.GetOutgoingFullBytesCount">
       <summary>
         <para>Returns how much raw data (in bytes) have been sent from start for all hosts (from Networking.NetworkTransport.Init call).</para>
@@ -32885,16 +34303,23 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
         <para>Messages count sending from start for the host.</para>
       </returns>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="M:UnityEngine.Networking.NetworkTransport.GetOutgoingMessageQueueSize(System.Int32,System.Byte&amp;)">
       <summary>
         <para>Returns the number of messages waiting in the outgoing message queue to be sent.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this queue.</param>
+=======
+      <param name="hostId">Host id associated with this queue.</param>
+>>>>>>> .merge_file_a12240
       <param name="error">Error code. Cast this value to Networking.NetworkError for more information.</param>
       <returns>
         <para>The number of messages waiting in the outgoing message queue to be sent.</para>
       </returns>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="M:UnityEngine.Networking.NetworkTransport.GetOutgoingPacketCount">
       <summary>
         <para>Returns how many packets have been sent from start (from call Networking.NetworkTransport.Init) for all hosts.</para>
@@ -32924,13 +34349,21 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
         <para>Count packets have been sent from host start.</para>
       </returns>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="M:UnityEngine.Networking.NetworkTransport.GetOutgoingPacketNetworkLossPercent(System.Int32,System.Int32,System.Byte&amp;)">
       <summary>
         <para>Returns the value in percent of the number of sent packets that were dropped by the network and not received by the peer.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
+=======
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>The number of packets dropped by the network in the last ping timeout period expressed as an integer percentage from 0 to 100.</para>
       </returns>
@@ -32939,13 +34372,20 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Returns the value in percent of the number of sent packets that were dropped by the peer.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
+=======
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+>>>>>>> .merge_file_a12240
       <returns>
         <para>The number of packets dropped by the peer in the last ping timeout period expressed as an integer percentage from 0 to 100.</para>
       </returns>
     </member>
+<<<<<<< .merge_file_a14588
     <member name="M:UnityEngine.Networking.NetworkTransport.GetOutgoingSystemBytesCount">
       <summary>
         <para>Returns how much user payload and protocol system headers (in bytes)  have been sent from start (from Networking.NetworkTransport.Init call).</para>
@@ -33004,6 +34444,8 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
         <para>Total payload (in bytes) sent from start for the host.</para>
       </returns>
     </member>
+=======
+>>>>>>> .merge_file_a12240
     <member name="M:UnityEngine.Networking.NetworkTransport.GetPacketReceivedRate(System.Int32,System.Int32,System.Byte&amp;)">
       <summary>
         <para>Return the current receive rate in bytes per second.</para>
@@ -33059,10 +34501,17 @@ DisconnectNetworkHost can only be called by the group owner on the relay server.
       <summary>
         <para>Function is queueing but not sending messages.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
       <param name="channelId">The channel ID to send on.</param>
+=======
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
+      <param name="channelId">The channelId to send on.</param>
+>>>>>>> .merge_file_a12240
       <param name="buffer">Buffer containing the data to send.</param>
       <param name="size">Size of the buffer.</param>
       <returns>
@@ -33142,6 +34591,17 @@ Can only be called by the relay group owner.</para>
       <param name="hostId">Host ID associated with this connection.</param>
       <param name="connectionId">ID of the connection.</param>
       <param name="error">Error (can be cast to Networking.NetworkError for more information).</param>
+      <returns>
+        <para>True if hostId and connectioId are valid.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.Networking.NetworkTransport.SendQueuedMessages(System.Int32,System.Int32,System.Byte&amp;)">
+      <summary>
+        <para>Sends messages, previously queued by NetworkTransport.QueueMessageForSending function.</para>
+      </summary>
+      <param name="hostId">Host id associated with this connection.</param>
+      <param name="connectionId">Id of the connection.</param>
+      <param name="error">Error (can be casted to Networking.NetworkError for more information).</param>
       <returns>
         <para>True if hostId and connectioId are valid.</para>
       </returns>
@@ -54593,7 +56053,11 @@ Rotation of the tree on X-Z plane (in radians).</para>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.canSetSkipOnDrop">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Determines whether the VideoPlayer skips frames to catch up with current time. (Read Only)</para>
+=======
+        <para>Determines whether the player skips frames to catch up with current time. (Read Only)</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.canSetTime">
@@ -54603,17 +56067,29 @@ Rotation of the tree on X-Z plane (in radians).</para>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.canSetTimeSource">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Whether the time source followed by the VideoPlayer can be changed. (Read Only)</para>
+=======
+        <para>Whether the time source followed by the video player can be changed. (Read Only)</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.canStep">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Returns true if the VideoPlayer can step forward through the video content. (Read Only)</para>
+=======
+        <para>Returns true if the player can step forwards into the video content. (Read Only)</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.clip">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>The clip being played by the VideoPlayer.</para>
+=======
+        <para>The clip being played by the player.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.controlledAudioTrackCount">
@@ -54635,7 +56111,11 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.frame">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>The frame index currently being displayed by the VideoPlayer.</para>
+=======
+        <para>The frame index currently being displayed by the player.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.frameCount">
@@ -54645,7 +56125,11 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="?:UnityEngine.Video.VideoPlayer.frameDropped(UnityEngine.Video.VideoPlayer/EventHandler)">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>[NOT YET IMPLEMENTED] Invoked when the video decoder does not produce a frame as per the time source during playback.</para>
+=======
+        <para>Invoked when playback detects it does not keep up with the time source.</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <param name="value"></param>
     </member>
@@ -54662,7 +56146,11 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.isLooping">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Determines whether the VideoPlayer restarts from the beginning when it reaches the end of the clip.</para>
+=======
+        <para>Deterimes whether the player restarts from the beginning without when it reaches the end of the clip.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.isPlaying">
@@ -54672,12 +56160,20 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.isPrepared">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Whether the VideoPlayer has successfully prepared the content to be played. (Read Only)</para>
+=======
+        <para>Whether the player has successfully prepared the content to be played. (Read Only)</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="?:UnityEngine.Video.VideoPlayer.loopPointReached(UnityEngine.Video.VideoPlayer/EventHandler)">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Invoked when the VideoPlayer reaches the end of the content to play.</para>
+=======
+        <para>Invoked when the player reaches the end of the content to play.</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <param name="value"></param>
     </member>
@@ -54693,7 +56189,11 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="?:UnityEngine.Video.VideoPlayer.prepareCompleted(UnityEngine.Video.VideoPlayer/EventHandler)">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Invoked when the VideoPlayer preparation is complete.</para>
+=======
+        <para>Invoked when the player preparation is complete.</para>
+>>>>>>> .merge_file_a12240
       </summary>
       <param name="value"></param>
     </member>
@@ -54715,12 +56215,20 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.skipOnDrop">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Whether the VideoPlayer is allowed to skip frames to catch up with current time.</para>
+=======
+        <para>Whether the player is allowed to skip frames to catch up with current time.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.source">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>The source that the VideoPlayer uses for playback.</para>
+=======
+        <para>The source that the player uses for playback.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="?:UnityEngine.Video.VideoPlayer.started(UnityEngine.Video.VideoPlayer/EventHandler)">
@@ -54761,22 +56269,38 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.time">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>The VideoPlayer current time in seconds.</para>
+=======
+        <para>The player current time in seconds.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.timeSource">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>[NOT YET IMPLEMENTED] The source used used by the VideoPlayer to derive its current time.</para>
+=======
+        <para>The clock that the player follows to derive its current time.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.url">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>The file or HTTP URL that the VideoPlayer will read content from.</para>
+=======
+        <para>The file or HTTP URL that the player will read content from.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="P:UnityEngine.Video.VideoPlayer.waitForFirstFrame">
       <summary>
+<<<<<<< .merge_file_a14588
         <para>Determines whether the VideoPlayer will wait for the first frame to be loaded into the texture before starting playback when Video.VideoPlayer.playOnAwake is on.</para>
+=======
+        <para>Determines whether the player will wait for the first frame to be loaded into the texture before starting playback when Video.VideoPlayer.playOnAwake is on.</para>
+>>>>>>> .merge_file_a12240
       </summary>
     </member>
     <member name="M:UnityEngine.Video.VideoPlayer.EnableAudioTrack(System.UInt16,System.Boolean)">
@@ -54790,21 +56314,34 @@ The actual number of audio tracks cannot be known in advance when playing URLs, 
       <summary>
         <para>Delegate type for VideoPlayer events that contain an error message.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="source">The VideoPlayer that is emitting the event.</param>
+=======
+      <param name="source">The player that is emitting the event.</param>
+>>>>>>> .merge_file_a12240
       <param name="message">Message describing the error just encountered.</param>
     </member>
     <member name="T:UnityEngine.Video.VideoPlayer.EventHandler">
       <summary>
         <para>Delegate type for all parameter-less events emitted by VideoPlayers.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="source">The VideoPlayer that is emitting the event.</param>
+=======
+      <param name="source">The player that is emitting the event.</param>
+>>>>>>> .merge_file_a12240
     </member>
     <member name="T:UnityEngine.Video.VideoPlayer.FrameReadyEventHandler">
       <summary>
         <para>Delegate type for VideoPlayer events that carry a frame number.</para>
       </summary>
+<<<<<<< .merge_file_a14588
       <param name="source">The VideoPlayer that is emitting the event.</param>
       <param name="frameNum">The frame the VideoPlayer is now at.</param>
+=======
+      <param name="source">The player that is emitting the event.</param>
+      <param name="frameNum">The frame the player is now at.</param>
+>>>>>>> .merge_file_a12240
       <param name="frameIdx"></param>
     </member>
     <member name="M:UnityEngine.Video.VideoPlayer.GetAudioChannelCount(System.UInt16)">
